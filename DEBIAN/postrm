@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Supprimez le répertoire s'il existe
+if [ -d "/usr/local/vittapi" ]; then
+    rm -rf /usr/local/vittapi
+fi
+
+for dir in /home/*/Desktop/; do
+    rm -f "$dir/vittapi.desktop"
+done
+
+

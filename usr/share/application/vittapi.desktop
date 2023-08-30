@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=vittapi
+GenericName=vittapi
+Comment=Raspberrypi & vittascience
+Exec=/usr/bin/vittapi.sh
+TryExec=/usr/bin/vittapi.sh
+Icon=/usr/share/icons/icon.png
+Terminal=true
+Type=Application
+Categories=Games;

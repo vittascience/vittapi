@@ -1,0 +1,43 @@
+#!/bin/sh
+
+pip install flask RPi.GPIO flask_cors Flask-SocketIO picamera2
+
+#sudo apt-get install sense-hat
+#sudo apt install -y python3-picamera2
+
+original_dir=$(pwd) # Save current directory
+
+GROVE_PI_PATH="/usr/local/vittapi/grove/grove.py"
+
+echo "Installing GrovePi library"
+
+cd "$GROVE_PI_PATH"
+sudo pip3 install .
+
+cd "$original_dir" # Return to the original directory
+
+GROVE_DHT_PATH="/usr/local/vittapi/grove/dht"
+
+echo "Installing Grove DHT library"
+
+cd "$GROVE_DHT_PATH"
+sudo python3 setup.py install
+
+cd "$original_dir" # Return to the original directory
+
+chmod +x /usr/bin/vittapi.sh
+
+
+# Create ShortCut to desktop
+cp /usr/share/application/vittapi.desktop /usr/share/applications/
+
+for dir in /home/*/Desktop/; do
+    cp /usr/share/application/vittapi.desktop "$dir"
+done
+
+for dir in /home/*/Desktop/; do
+    chmod +x "$dir/vittapi.desktop"
+done
+
+exit 0
+

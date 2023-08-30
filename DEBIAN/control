@@ -1,0 +1,8 @@
+Package: vittapi
+Version: 1.0
+Architecture: all
+Depends: sense-hat, python3-tk
+Essential: no
+Priority: optional
+Maintainer: Nicolas <nicolas@vittascience.com>
+Description: Server base connection between raspberrypi and vittascience.com
