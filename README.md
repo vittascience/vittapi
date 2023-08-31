@@ -75,7 +75,7 @@ Pour installer VittaPi, suivez les étapes ci-dessous :
 1. Téléchargez le package depuis le dépôt :
 
     ```bash
-    git clone [URL_du_dépôt]
+    git clone https://github.com/vittascience/vittapi.git
     ```
 
 2. Construisez le package :
@@ -110,7 +110,7 @@ Après l'installation, un raccourci sera créé sur le bureau de votre Raspberry
 
 ## Fonctionnement
 
-Pour téléverser du code, vous devrez spécifier le nom d'hôte de votre Raspberry Pi à l'aide d'un bloc `[raspberry]`. Vous pouvez également utiliser l'adresse IP de votre Raspberry Pi.
+Pour téléverser du code, vous devrez spécifier le nom d'hôte de votre Raspberry Pi à l'aide d'un bloc `[raspberry] nom d'hôte`. Vous pouvez également utiliser l'adresse IP de votre Raspberry Pi.
 
 ---
 
