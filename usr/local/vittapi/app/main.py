@@ -119,6 +119,9 @@ def terminate():
     terminate_current_process()
     return Response("Process terminated", content_type='text/plain')
 
+@app.route('/')
+def home():
+    return send_file('static/index.html')
 
 @socketio.on('message')
 def handle_connection(data):
