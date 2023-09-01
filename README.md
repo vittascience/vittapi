@@ -112,6 +112,8 @@ Après l'installation, un raccourci sera créé sur le bureau de votre Raspberry
 
 Pour téléverser du code, vous devrez spécifier le nom d'hôte de votre Raspberry Pi à l'aide d'un bloc `[raspberry] nom d'hôte`. Vous pouvez également utiliser l'adresse IP de votre Raspberry Pi.
 
+Si le téléversement échoue, vérifiez que le nom d'hôte est correct et que votre Raspberry Pi est connecté à Internet. Pour la première connexion depuis un autre terminal que celui de votre Raspberry Pi, vous devez autoriser la connexion une connexion non sécurisée. 
+
 ---
 
 ## Avertissement
