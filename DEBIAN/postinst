@@ -39,5 +39,11 @@ for dir in /home/*/Desktop/; do
     chmod +x "$dir/vittapi.desktop"
 done
 
+mkdir -p /usr/local/vittapi/app/certs
+
+HOSTNAME=$(hostname)
+
+openssl req -x509 -newkey rsa:4096 -nodes -out /usr/local/vittapi/app/certs/cert.pem -keyout /usr/local/vittapi/app/certs/key.pem -days 365 -subj "/C=US/ST=Denial/L=Springfield/O=Dis/CN=$HOSTNAME"
+
 exit 0
 
