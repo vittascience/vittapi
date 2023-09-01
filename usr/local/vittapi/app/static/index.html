@@ -1,13 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <main>
-        <div>Coucou les amis</div>
-    </main>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Vittascience</title>
+		<link
+			rel="icon"
+			type="image/png"
+			href="icon.png"
+		/>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
+			.banner {
+				background-color: #22b573;
+				color: white;
+				text-align: center;
+				padding: 20px;
+				font-size: 2rem;
+			}
+			.content {
+				padding: 20px;
+				text-align: center;
+				font-size: 18px;
+			}
+			.title {
+				font-size: 3vw;
+			}
+			.arrow {
+				font-size: 4rem;
+				color: #22b573;
+			}
+			.congrats {
+				font-size: 1.5rem;
+				margin: 20px 0;
+				max-width: 600px;
+				text-align: center;
+                margin: auto;
+			}
+			.raspberrypi-image-container {
+				margin-top: 20px;
+				max-width: 600px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+			}
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<span class="title">Vittascience</span>
+		</div>
+		<div class="content">
+			<div class="arrow">⬇</div>
+			<div class="congrats">
+				<p>Félicitations, vous pouvez désormais vous connecter et communiquer avec votre Raspberry Pi en téléversant du code via la plateforme Vittascience.</p>
+			</div>
+			<div class="raspberrypi-image-container">
+				<img
+					src="raspberry-pi-board.jpg"
+					alt="Raspberry Pi Board"
+				/>
+			</div>
+		</div>
+	</body>
 </html>
