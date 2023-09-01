@@ -137,4 +137,4 @@ t = threading.Thread(target=GUI_interface.run_tkinter)
 t.start()
 
 if __name__ == '__main__':
-    socketio.run(app, ssl_context='adhoc', host="0.0.0.0")
+    socketio.run(app, host="0.0.0.0", ssl_context=('/usr/local/vittapi/app/certs/cert.pem', '/usr/local/vittapi/app/certs/key.pem'))
