@@ -137,4 +137,4 @@ t = threading.Thread(target=GUI_interface.run_tkinter)
 t.start()
 
 if __name__ == '__main__':
-    socketio.run(app, host="0.0.0.0")
+    socketio.run(app, ssl_context='adhoc')
